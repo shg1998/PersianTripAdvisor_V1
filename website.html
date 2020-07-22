@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Persian Trip Advisor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top " style="background-color: black;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <div id="logoContainer">
+          <div class="col-md-2">
+            <img src="assets/img/download.png" alt="" id="logo">
+          </div>
+          <div class="col-md-5">
+            <h4 id="h4Logo"><kbd id="kbdLogo">persian</kbd>&nbsp;tripAdvisor</h4>
+          </div>
+          <div class="col-md-5" style="margin-top:-2rem ; ">
+            <h3 style="color: #f5f5f5;"><a class="login" data-dismiss="modal" aria-label="Close"
+                href="login.html">ورود</a>/ <a class="register" href="register.html">ثبت نام</a> </h3>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><input type="submit"
+              style="border-radius: 40%; width: 50px; margin-right: 1rem; height: 35px; background-color: green; color: aliceblue; margin-top: 1.5rem; border: 1px solid rgb(42, 187, 13);">
+          </li>
+          <li><input class="" type=""
+              style="margin-right:100px ; margin-top: 1rem; height: 40px; width: 200px; border-radius: 4rem; font-family: Sahel; direction: rtl; font-weight: bold;"
+              placeholder="          هرچه میخواهد دل تنگت بگو   "></li>
+
+          <li><a href="contact.html" id="contact">تماس با ما
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true" style="font-size: 2rem;"></span>
+            </a></li>
+          <li><a href="about.html" id="about">درباره ما
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size: 2rem;"></span>
+            </a></li>
+          <li><a href="tours.html" id="tours">تور ها
+              <span class="glyphicon glyphicon-briefcase" aria-hidden="true" style="font-size: 2rem;"></span>
+            </a></li>
+          <li><a href="website.html" id="home">خانه
+              <span class="glyphicon glyphicon-home" aria-hidden="true" style="font-size: 2rem;"></span>
+            </a></li>
+          <!-- <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">سلام</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
+            </ul>
+            
+          </li> -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="assets/img/hafezieh.jpg" alt="Hafezieh" width="1200" height="600">
+        <div class="carousel-caption">
+          <h1 id="h1_first_image_carousel">با ما به راحتی سفر کنید</h1>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="assets/img/3107.jpg" alt="ImamReza(Mashhad)" width="1200" height="700">
+        <div class="carousel-caption">
+          <h1 id="h1_second_image_carousel">تور های زیارتی</h1>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="assets/img/sahel.jpg" alt="khalij fars" width="1200" height="700">
+        <div class="carousel-caption">
+          <h1 id="h1_third_image_carousel">تور های سیاحتی</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Container (TOUR Section) -->
+  <div id="tour" class="bg-1">
+    <div class="container">
+      <h3 class="text-center" id="favoriteToursText">تور های پیشنهادی</h3>
+      <br>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="thumbnail" style="width: 400; height: 300;">
+            <img class="Offer" src="assets/img/13187-629.jpg" alt="jangel abr shahrood" width="300" height="100"
+              style="margin-bottom: -.7rem;">
+            <p><strong>تور جنگل ابر شاهرود</strong></p>
+            <p>13آبان 99</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal" id="reserveBtn">رزرو و خرید</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail" style="width: 400; height: 300;">
+            <img class="Offer" src="assets/img/شاهچراغ.jpg" alt="shahcheraq" width="400" height="400">
+            <p><strong>تور زیارتی شاهچراغ</strong></p>
+            <p>آذر 1399</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal" id="reserveBtn">رزرو و خرید</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail" style="width: 400; height: 300;">
+            <img class="Offer" src="assets/img/5166295.jpg" alt="San Francisco" width="400" height="300"
+              style="margin-bottom: -1.5rem;">
+            <p><strong>تور سیاحتی سواحل زیبای خلیج فارس</strong></p>
+            <p>دی 1399</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal" id="reserveBtn">رزرو و خرید</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 id="buyTicket"><span class="glyphicon glyphicon-shopping-cart"></span> خرید بلیط</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group" id="payContainer">
+                <label for="psw" id="howmuch"><span class="glyphicon glyphicon-shopping-cart"></span> پانصد هزار تومان
+                  به ازای هر نفر
+                </label>
+                <input type="number" class="form-control" id="psw" placeholder="تعداد؟">
+              </div>
+
+              <button type="submit" class="btn btn-success btn-block " id="payBtn">انتقال به درگاه پرداخت
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"
+              style="font-family: Sahel;">
+              <span class="glyphicon glyphicon-remove"></span> انصراف
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <!-- <div id="contact" class="container">
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>We love our fans!</em></p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <p>Fan? Drop a note.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+        <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h3 class="text-center">From The Blog</h3>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
+      <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
+      <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h2>Mike Ross, Manager</h2>
+        <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h2>Chandler Bing, Guitarist</h2>
+        <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h2>Peter Griffin, Bass player</h2>
+        <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Image of location/map -->
+  <!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
+
+  <!-- Footer -->
+
+  <footer class="text-center" id="footer">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <div class="col-md-4"
+      style="background-color: gray ; border-top-left-radius: 5rem; border-bottom-left-radius: 5rem;">
+      <img id="tripAdvisorLogoBottom" src="assets/img/tripadvisor_logo.jpg" alt="tripAdvisor">
+      <p id="phoneNumber"> 021-654321| 021-123456: تلفن پشتیبانی</p>
+      <div class="col-md-4" id="logo1" style="height: 13rem; ">
+        <img src="assets/img/logo.png" alt="samt" width="100">
+      </div>
+      <div class="col-md-4" id="logo1" style="height: 13rem; margin-left: 1rem;">
+        <img src="assets/img/kasb.f1720ad.png" alt="kasb" style="margin-left: -1.3rem;">
+      </div>
+      <div class="col-md-4" id="logo1" style="height: 13rem; margin-left: 1rem;">
+        <img src="assets/img/aira.0d558e5.png" alt="aira" style="margin-left: -1.4rem;">
+      </div>
+    </div>
+    <div class="col-md-4" style="background-color: gray;">
+      <p id="site-footer-title"> خدمات مشتریان</p>
+      <br>
+      <ul class="col-xs-6 col-sm-12" style="direction: rtl; list-style-type: none; ">
+        <li>
+          <a href="#" id="site-footer-item"> پاسخ به پرسش های متداول</a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> شرایط استفاده</a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> حریم خصوصی</a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> باشگاه مشتریان</a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> گزارش باگ </a>
+        </li>
+      </ul>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <p class="Address_title"> :آدرس</p><br>
+      <p class="Address_text"> ایران - تهران - میدان ولیعصر - خیابان حافظ - پلاک ۳۵۰</p>
+    </div>
+    <div class="col-md-4"
+      style="background-color: gray; border-top-right-radius: 5rem; border-bottom-right-radius:5rem;">
+      <p id="site-footer-title">تریپ ادوایزر</p>
+      <br>
+      <ul class="col-xs-6 col-sm-12" style="direction: rtl; list-style-type: none; ">
+        <li>
+          <a href="#" id="site-footer-item">درباره ما</a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item">تماس با ما</a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> چرا تریپ ادوایزر؟</a>
+        </li>
+
+
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> قوانین و مقررات </a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> راهنمای خرید </a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> بلاگ </a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> مجله تریپ ادوایزر </a>
+        </li>
+        <br>
+        <li>
+          <a href="#" id="site-footer-item"> فرصت های شغلی </a>
+        </li>
+      </ul>
+    </div>
+    <div style=" height: 50px;">
+      <p id="copyright">کلیه حقوق این سایت محفوظ و متعلق به تریپ ادوایزر می باشد</p>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+        if (this.hash !== "") {
+
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            window.location.hash = hash;
+          });
+        }
+      });
+
+    });
+  </script>
+  <script>
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

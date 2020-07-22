@@ -1,0 +1,427 @@
+@font-face {
+    font-family: Sahel;
+    src: url(../fonts/Sahel.eot);
+    src: url(../fonts/Sahel.ttf) format("ttf"), url(../fonts/Sahel.woff) format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: nastaliq;
+    src: url(../fonts/IranNastaliq.ttf);
+    font-weight: normal;
+}
+html {
+    height: auto;
+    background-color: #2d2d30;
+}
+body {
+    color: #777;
+}
+h3,
+h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: #111;
+}
+.container {
+    padding: 80px 120px;
+}
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+.person:hover {
+    border-color: #f1f1f1;
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+.bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+}
+.bg-1 h3 {
+    color: #fff;
+}
+.bg-1 p {
+    font-style: italic;
+}
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+    -webkit-transition: all 1;
+    transition: all 1;
+}
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: 0.2s;
+}
+.btn:hover,
+.btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+.modal-header,
+h4,
+.close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+.modal-header,
+.modal-body {
+    padding: 40px 50px;
+}
+.nav-tabs li a {
+    color: #777;
+}
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+
+    opacity: 0.9;
+}
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+.dropdown-menu li a {
+    color: #000 !important;
+}
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+footer a {
+    color: #f5f5f5;
+
+    transition: all 1;
+}
+footer a:hover {
+    color: rgb(20, 20, 20);
+    letter-spacing: 2px;
+    text-decoration: none;
+    -webkit-transition: all 1;
+    transition: all 1;
+}
+.form-control {
+    border-radius: 0;
+}
+textarea {
+    resize: none;
+}
+#logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin-top: -0.7rem;
+    margin-bottom: 0.5rem;
+}
+#home,
+#contact,
+#about,
+#tours {
+    color: black;
+    font-family: Sahel;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 1.5rem;
+}
+
+#kbdLogo {
+    font-weight: bold;
+    background-color: rgb(14, 128, 14);
+    letter-spacing: 0;
+    
+}
+#logoContainer {
+    margin-top: 1.2rem;
+    vertical-align: bottom;
+}
+#h4Logo {
+    background-color: transparent;
+    letter-spacing: 0;
+}
+#h1_first_image_carousel,
+#h1_second_image_carousel,
+#h1_third_image_carousel {
+    font-family: nastaliq;
+    color: yellow;
+    font-size: 10rem;
+}
+#favoriteToursText {
+    letter-spacing: 0;
+    font-family: Sahel;
+}
+#reserveBtn {
+    font-family: Sahel;
+}
+#buyTicket {
+    font-family: Sahel;
+    letter-spacing: 0;
+}
+#howmuch {
+    font-family: Sahel;
+    letter-spacing: 0;
+    align-items: flex-end;
+    text-align: right;
+    /* direction: rtl; */
+}
+#payContainer {
+    align-items: flex-end;
+    text-align: right;
+    direction: rtl;
+}
+#psw {
+    font-family: Sahel;
+}
+#payBtn {
+    font-family: Sahel;
+}
+#footer div {
+    height: 500px;
+}
+#tripAdvisorLogoBottom {
+    width: 60%;
+    height: 15rem;
+    margin-top: 1rem;
+    border-radius: 10rem;
+}
+#phoneNumber {
+    margin-top: 3rem;
+    font-family: Sahel;
+    font-weight: bold;
+}
+#logo1 {
+    background-color: aliceblue;
+    margin-top: 5rem;
+    width: 12rem;
+    border-radius: 3rem;
+    box-shadow: 5px 10px 10px black;
+}
+#copyright {
+    margin-top: 2rem;
+    font-family: Sahel;
+    font-size: 2rem;
+}
+#site-footer-title {
+    margin-top: 2rem;
+    font-family: Sahel;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#site-footer-item {
+    font-family: Sahel;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.Offer {
+    transition: transform 0.2s;
+    z-index: 1;
+}
+.Offer:hover {
+    -webkit-transition: all 1;
+    transition: all 1;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    border: 2px solid black;
+    z-index: 10;
+    z-index: auto;
+}
+.Address_title {
+    font-family: Sahel;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.Address_text {
+    font-family: Sahel;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.about {
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.about .about-us-1 {
+    width: 40%;
+}
+
+.about .about-us-1 img {
+    width: 100%;
+    opacity: 0.7;
+    display: block;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.about .about-us-2 {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 80px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.about .about-us-2 .star {
+    margin: 30px 0;
+}
+
+.about .about-us-2 .str {
+    font-size: 15px;
+    color: #d3ab55;
+    margin-left: 8px;
+}
+
+.about .about-us-2 .desc {
+    margin-top: -5rem;
+    font-family: nastaliq, Tahoma;
+    color: black;
+    font-size: 30px;
+    direction: rtl;
+    text-align: justify;
+}
+
+.about .about-us-2 .desc::first-letter {
+    padding-right: 34px;
+}
+.heading3 {
+    font-family: Sahel, Tahoma;
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    letter-spacing: 0;
+}
+
+.heading4 {
+    font-family: nastaliq, Tahoma;
+    font-size: 100px;
+    font-weight: 300;
+    color: #d3ab55;
+
+    letter-spacing: 0;
+}
+.btn1 {
+    width: 230px;
+    height: 50px;
+    font-family: Sahel, Tahoma;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #d3ab55;
+    background-color: transparent;
+    border: 1px solid #d3ab55;
+    border-radius: 20px;
+    -webkit-transition: all 0.4;
+    transition: all 0.4;
+}
+.btn1:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #d3ab55;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.register {
+    letter-spacing: 0;
+    font-family: Sahel;
+    font-size: 2.25rem;
+    color: #f5f5f5;
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login {
+    letter-spacing: 0;
+    font-family: Sahel;
+    font-size: 2.25rem;
+    color: #f5f5f5;
+}
+
+.login:hover {
+    opacity: 0.8;
+}
